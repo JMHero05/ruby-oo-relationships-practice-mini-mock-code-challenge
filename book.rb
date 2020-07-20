@@ -20,9 +20,12 @@ class Book
   end
 
   def author
-    characters.find_all do |character|
-      character.book == self
+    characters.map do |book|
+      book.author
     end
   end
+
+ 
+
 
 end

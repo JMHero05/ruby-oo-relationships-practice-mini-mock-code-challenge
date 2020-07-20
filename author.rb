@@ -19,8 +19,8 @@ class Author
   end
 
   def books
-    characters.find_all do |character|
-      character.author == self
+    characters.map do |character|
+      character.book
     end
   end
 
@@ -30,8 +30,8 @@ class Author
 
   def total_words
     sum = 0
-    books.find_all do |character|
-      sum += character.book.word_count
+    books.find_all do |book|
+      sum += book.word_count
     end
     sum
   end

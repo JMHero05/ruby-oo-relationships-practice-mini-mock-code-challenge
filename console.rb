@@ -34,11 +34,18 @@ phoenix = Book.new("Harry Potter and the Order of the Phoenix", 257045)
 half_blood = Book.new("Harry Potter and the Half-Blood Prince", 168923)
 deathly = Book.new("Harry Potter and the Deathly Hallows", 198227)
 
-# Libraries
+# Characters
 ned = Character.new("Ned Stark", "Westoros", game, martin)
 tolkien.write_book("Frodo", "Middle-Earth", fellowship)
 tolkien.write_book("Frodo", "Middle-Earth", towers)
 tolkien.write_book("Frodo", "Middle-Earth", king)
+tolkien.write_book("Bilbo", "Middle-Earth", hobbit)
+martin.write_book("Arya", "Westoros", game)
+martin.write_book("Arya", "Westoros", feast)
+martin.write_book("Arya", "Westoros", clash)
+martin.write_book("Arya", "Westoros", dance)
+martin.write_book("Arya", "Westoros", storm)
+
 
 
 
