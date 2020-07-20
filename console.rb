@@ -1,6 +1,7 @@
 require 'pry'
 require_relative './book'
 require_relative './author'
+require_relative './character'
 
 # Authors
 tolkien = Author.new("J.R.R. Tolkien")
@@ -32,6 +33,14 @@ goblet = Book.new("Harry Potter and the Goblet of Fire", 190637)
 phoenix = Book.new("Harry Potter and the Order of the Phoenix", 257045)
 half_blood = Book.new("Harry Potter and the Half-Blood Prince", 168923)
 deathly = Book.new("Harry Potter and the Deathly Hallows", 198227)
+
+# Libraries
+ned = Character.new("Ned Stark", "Westoros", game, martin)
+tolkien.write_book("Frodo", "Middle-Earth", fellowship)
+tolkien.write_book("Frodo", "Middle-Earth", towers)
+tolkien.write_book("Frodo", "Middle-Earth", king)
+
+
 
 
 binding.pry

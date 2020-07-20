@@ -13,4 +13,16 @@ class Book
     @@all
   end
 
+  def characters
+    Character.all.select do |character|
+      character.book == self
+    end
+  end
+
+  def author
+    characters.find_all do |character|
+      character.book == self
+    end
+  end
+
 end
