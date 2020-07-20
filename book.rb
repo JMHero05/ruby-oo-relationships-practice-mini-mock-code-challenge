@@ -1,11 +1,10 @@
 class Book
-  attr_accessor :author, :title, :word_count
+  attr_accessor :title, :word_count
 
   @@all = []
 
-  def initialize(title, author, word_count)
+  def initialize(title, word_count)
     @title = title
-    @author = author
     @word_count = word_count
     @@all << self
   end
